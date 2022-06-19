@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewpoint" content="width=device=width, iniatal-scale=1.0">
+	<link rel="stylesheet" href="tali kasut.css">
+	<script src="https://kit.fontawesome.com/ef6ef1a583.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	
+</head>
+
+<body>
+	<header>
+		<div class="tittle">
+			<div class="logo">
+				<a href="#">TIKWAWI</a>
+			</div>
+		
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Contact</a>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="left-side">
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<p>.</p>
+		<img src="mjy.jpg" style="height:500px;text-align:center;">
+	</div>
+
+
+		
+	<div class="main">
+		
+		<div class="title">
+			<h1>Shoe Survey</h1>
+			<form action="/action_page.php">
+			<table>
+				<br><br><p>1. What kind of shoe do you wear most often?</p><br><br>
+ 				<input type="radio" id="heels/pumps" name="wear"" value="heels/pumps">
+  				<label for="heels/pumps"> heels/pumps</label><br><br>
+  				<input type="radio" id="sneakers" name="wear"" value="sneakers">
+  				<label for="sneakers"> sneakers	</label><br><br>
+  				<input type="radio" id="flats" name="wear" value="flats">
+  				<label for="flats"> flats</label><br><br>
+  				<input type="radio" id="boots" name="wear" value="boots">
+  				<label for="boots"> boots</label><br><br>
+ 				<input type="radio" id="other" name="wear" value="other">
+  				<label for="other"> other</label><br><br>
+
+				<br><p>2. What type of shoe do you prefer to buy?</p><br>
+ 				<input type="radio" id="heels/pumps" name="prefer" value="heels/pumps">
+  				<label for="heels/pumps"> heels/pumps</label><br><br>
+  				<input type="radio" id="sneakers" name="prefer" value="sneakers">
+  				<label for="sneakers"> sneakers	</label><br><br>
+  				<input type="radio" id="flats" name="prefer" value="flats">
+  				<label for="flats"> flats</label><br><br>
+  				<input type="radio" id="boots" name="prefer" value="boots">
+  				<label for="boots"> boots</label><br><br>
+ 				<input type="radio" id="other" name="prefer" value="other">
+  				<label for="other"> other</label><br><br>
+				
+				<br><p>3. What do you like most about the type of shoes you wear?</p><br>
+ 				<input type="checkbox" id="styles" name="styles" value="styles">
+  				<label for="styles"> styles</label><br><br>
+  				<input type="checkbox" id="comfort" name="comfort" value="comfort">
+  				<label for="comfort"> comfort</label><br><br>
+  				<input type="checkbox" id="color/button" name="color/button" value="color/button">
+  				<label for="color/button"> color/button</label><br><br>
+
+				<br><p>4. On average, how much do you spend on a pair of shoes?</p><br>
+ 				<input type="radio" id="beginner" name="spend" value="beginner">
+  				<label for="beginner"> RM5 - RM50</label><br><br>
+  				<input type="radio" id="medium" name="spend" value="medium">
+  				<label for="medium"> RM50 - RM100</label><br><br>
+  				<input type="radio" id="hard" name="spend" value="hard">
+  				<label for="hard"> RM100 - RM150</label><br><br>
+  				<input type="radio" id="expert" name="spend" value="expert">
+  				<label for="expert"> RM150-RM200</label><br><br>
+ 				<input type="radio" id="rare" name="spend" value="rare">
+  				<label for="rare"> RM200 or more</label><br><br>
+				
+				<br><label for="size">5. Choose your shoe size:</label>
+				<select id="size" name="size">
+				<option>
+				<option value="5"> 5</option>
+				<option value="5.5"> 5.5</option>
+				<option value="6"> 6</option>
+				<option value="6.5"> 6.5</option>
+				<option value="7"> 7</option>
+				<option value="7.5"> 7.5</option>
+				<option value="8"> 8</option>
+				<option value="8.5"> 8.5</option>
+				<option value="9"> 9</option>
+				<option value="9.5"> 9.5</option>
+				<option value="10"> 10</option>
+				<option value="11"> 11</option>
+				</select><br><br>
+				
+				<br><label for="shoelace">6. Choose your favourite shoelace colour:</label>
+				<select id="shoelace" name="shoelace">
+				<option>
+				<option value="red">red</option>
+				<option value="black">black</option>
+				<option value="white">white</option>
+				<option value="green">green</option>
+				<option value="orange">orange</option>
+				<option value="yellow">yellow</option>
+				<option value="blue">blue</option>
+				<option value="skyblue">skyblue</option>
+				<option value="gray">gray</option>
+				<option value="brown">brown</option>
+				<option value="pink">pink</option>
+				<option value="purple">purple</option>
+				</select><br><br><br>
+				
+				7. Please describe the difficulties in finding your shoe size.&nbsp;&nbsp;&nbsp;<br><br><br><br>
+				<textarea name="message" rows="5" cols="30"></textarea><br><br><br>
+				<br>
+				
+				<p>8. What is your gender?</p><br><br>
+ 				<input type="radio" id="male" name="gender" value="male">
+  				<label for="male">Male</label><br><br>
+  				<input type="radio" id="female" name="gender" value="female">
+  				<label for="female">Female</label><br><br><br>
+
+				<p>9. What is your age?</p><br><br>
+ 				<input type="radio" id="18to28" name="age" value="18to28">
+  				<label for="18to28">18 to 28</label><br><br>
+  				<input type="radio" id="29to38" name="age" value="29to38">
+  				<label for="29to38">29 to 38</label><br><br>
+  				<input type="radio" id="39to48" name="age" value="39to48">
+  				<label for="39to48">39 to 48</label><br><br>
+  				<input type="radio" id="49" name="age" value="49">
+  				<label for="49">49 or older</label><br><br>
+
+				<br><p>10. Would you mind sharing this surey with others?</p><br><br>
+ 				<input type="radio" id="yes" name="share" value="yes">
+  				<label for="yes">yes</label><br><br>
+  				<input type="radio" id="no" name="share" value="no">
+  				<label for="no">no</label><br><br>
+
+				<br><p>11. Please leave your name and email address<p><br><br>
+				<table>
+				<tr>
+					<td>
+						<label for="name">Name:</label><br><br>
+					</td>
+					<td>
+						<input type="text" id="name" name="name" placeholder="name" size="40"><br><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="email">Email:</label><br><br>
+					</td>
+					<td>
+						<input type="text" id="email" name="email" placeholder="email" size="40"><br><br>
+					</td>
+				</tr>
+				</table>
+				
+				<td colspan="3">
+				
+			</table>
+					<input type="submit" value="Submit">
+					<input type="Reset" value="Reset"> 
+			</form> 
+		</div>
+	</div>
+	
+	<div class="right-side">
+		<img src="ASDADADAD.jpg" style="width:300px;height:500px;text-align:center;">
+		<h2>
+	</div>
+	
+	<footer>
+		<ul class="add">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-reddit"></i></a></li>
+		</ul>
+		
+		<p>Tali Kasut Warna Warni SDN. BHD. @ since 2022<p> 
+	</footer>
+</body>
+</html>
