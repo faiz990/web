@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Setia Travel Agency</title>
+	<link rel="stylesheet" href="C:/Users/User/train html/project 2/themes/travel.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		*{
+			box_sizing:border-box;
+		}
+		.container{
+			max-width:1200px;
+			margin: auto;
+			background:#f2f2f2;
+			overflow:auto;
+		}
+		.gallery{
+			margin:5px;
+			border: 1px solid #ccc;
+			float:left;
+			width:600px;
+		}
+		.gallery img{
+			width:100%;
+			height:auto;
+		}
+		.desc{
+			padding:15px;
+			text-align:center;
+		}
+	</style>
+	
+</head>
+
+	<body>
+		<div data-role="page" id="home" data-theme="a">
+			<div data-role="header">
+				<h1 style="letter-spacing:5px;font-family:Rockwell;font-size:30px">SETIA TRAVEL AGENCY</h1>
+			</div>
+			<div data-role="navbar" data-iconpos="left">
+			<ul>
+					<li> <a href="#home" data-icon="home" data-theme="b">HOME</a> </li>
+					<li> <a href="#holiday" data-icon="star">HOLIDAY</a> </li>
+					<li> <a href="#booking" data-icon="edit">BOOKING</a> </li>
+					<li> <a href="#more" data-icon="cloud">MORE INFORMAITON</a> </li>
+			</ul>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<h1 id="greet" onmouseover="mouseOver()" onmouseout="mouseOut()" style="font-family:algerian;text-align:center">WELCOME TO SETIA TRAVEL AGENCY</h1><br>
+					<script>
+						function mouseOver() {
+						document.getElementById("greet").innerHTML = "HELLO DEAR CUSTOMER";
+						}
+						function mouseOut() {
+						document.getElementById("greet").innerHTML = "WELCOME TO SETIA TRAVEL AGENCY";
+						}
+					</script>
+				<p align="center"><img src="welcome.jpg" width="100%" height="80%"></p>
+				<a href="#holiday" data-transition="flow" style="float:right">Holiday Page</a>
+			</div>
+			<div data-role="footer">
+				<h2 style="bot:0;">&copy; AHFA</h2>
+			</div>
+		</div>
+		<div data-role="page" id="holiday">
+			<div data-role="header">
+				<h1 style="letter-spacing:5px;font-family:Rockwell;font-size:30px">SETIA TRAVEL AGENCY</h1>
+			</div>
+			
+			<div data-role="navbar" data-iconpos="left">
+			<ul>
+					<li> <a href="#home" data-icon="home">HOME</a> </li>
+					<li> <a href="#holiday" data-icon="star" data-theme="b">HOLIDAY</a> </li>
+					<li> <a href="#booking" data-icon="edit">BOOKING</a> </li>
+					<li> <a href="#more" data-icon="cloud">MORE INFORMAITON</a> </li>
+			</ul>
+			</div>
+			<div data-role="main" class="ui-content" style="margin:0">
+				<div class = "Container">
+					<div class = "gallery">
+						<img src="bungalow.jpg">
+							<div class = "desc"><a href="https://www.jonesaroundtheworld.com/overwater-bungalows-malaysia/">OverWater Bungalow</a></div>
+					</div>
+				</div>
+				<div class = "Container">
+					<div class = "gallery">
+						<img src="rails.jpg">
+							<div class = "desc"><a href="https://www.greatrail.com/">Rails Journey</a></div>
+					</div>
+				</div>
+				<div class = "Container">
+					<div class = "gallery">
+						<img src="honeymoon1.jpg">
+							<div class = "desc"><a href="https://traveltriangle.com/blog/international-honeymoon-destinations-on-your-budget/">Honeymoon</a></div>
+					</div>
+				</div>
+				<div class = "Container">
+					<div class = "gallery">
+						<img src="active.jpg">
+							<div class = "desc"><a href="https://www.theguardian.com/travel/2019/feb/02/20-best-activity-holidays-uk-europe">Active Holidays</a></div>
+					</div>
+				</div>
+				<div class = "Container">
+					<div class = "gallery">
+						<img src="tour.jpg">
+							<div class = "desc"><a href="https://www.tripadvisor.com.my/Attractions-g293951-Activities-c36-Malaysia.html">Food & Wine Holidays</a></div>
+					</div>
+				</div>
+				<div class = "Container">
+					<div class = "gallery">
+						<img src="festival.jpg">
+							<div class = "desc"><a href="https://www.audleytravel.com/blog/2011/september/top-festivals-around-the-world">Festival & Events</a></div>
+					</div>
+				</div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br>
+				<a href="#home" data-transition="flow">Home page</a><a href="#booking" data-transition="pop" style="float:right">Booking page</a>
+			</div>
+			<div data-role="footer">
+				<h2>&copy; AHFA</h2>
+			</div>
+		</div>
+		<div data-role="page" id="booking">
+			<div data-role="header">
+				<h1 style="letter-spacing:5px;font-family:Rockwell;font-size:30px">SETIA TRAVEL AGENCY</h1>
+			</div>
+			<div data-role="navbar" data-iconpos="left">
+			<ul>
+					<li> <a href="#home" data-icon="home">HOME</a> </li>
+					<li> <a href="#holiday" data-icon="star">HOLIDAY</a> </li>
+					<li> <a href="#booking" data-icon="edit" data-theme="b">BOOKING</a> </li>
+					<li> <a href="#more" data-icon="cloud">MORE INFORMAITON</a> </li>
+			</ul>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<h1 style="font-family:rockwell;text-align:center">BOOKING FLIGHT</h1>
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+   					<h4>BOOKING form</h4>
+					<form action="/action_page.php" onsubmit="booking()">
+						<table>
+						<tr>
+							<td>
+								<label for="name">Name:</label>
+							</td>
+							<td>
+								<input type="text" id="name" name="name" placeholder="Name" size="200" onchange="fc1()" onblur="fcs1()">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="email">Email:</label>	
+							</td>
+							<td>
+								<input type="text" id="email" name="email" placeholder="Email" size="200" onblur="fcs2()">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="phone">Phone Number:</label>
+							</td>
+							<td>
+								<input type="text" id="phone" name="phone" placeholder="Phone Number" size="200" onblur="fcs3()">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="date">Departure Date:</label>
+							</td>
+							<td>
+								<input type="text" id="date" name="date" placeholder="Departure Date" size="200" onblur="fcs4()">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="time">Departure Time:</label>
+							</td>
+							<td>
+								<input type="text" id="time" name="time" placeholder="Departure Time" size="200" onblur="fcs5()">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="from">From :</label>
+							</td>
+							<td>
+								<select id="from" name="from">
+								<option>
+								<option value="malaysia">MALAYSIA</option>
+								<option value="indonesia">INDONESIA</option>
+								<option value="vietnam">VIETNAM</option>
+								<option value="china">CHINA</option>
+								<option value="japan">JAPAN</option>
+								<option value="south">SOUTH KOREA</option>
+								<option value="thailand">THAILAND</option>
+								<option value="afghanistan">AFGHANISTAN</option>
+								<option value="singapore">SINGAPORE</option>
+								<option value="philiphine">PHILIPHINE</option>
+								<option value="laos">LAOS</option>
+								<option value="myanmar">MYANMAR</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="to">To :</label>
+							</td>
+							<td>
+								<select id="to" name="to">
+								<option>
+								<option value="malaysia">MALAYSIA</option>
+								<option value="indonesia">INDONESIA</option>
+								<option value="vietnam">VIETNAM</option>
+								<option value="china">CHINA</option>
+								<option value="japan">JAPAN</option>
+								<option value="south">SOUTH KOREA</option>
+								<option value="thailand">THAILAND</option>
+								<option value="afghanistan">AFGHANISTAN</option>
+								<option value="singapore">SINGAPORE</option>
+								<option value="philiphine">PHILIPHINE</option>
+								<option value="laos">LAOS</option>
+								<option value="myanmar">MYANMAR</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="airline">Preferred Airline :</label>
+							</td>
+							<td>
+								<select id="airline" name="airline">
+								<option>
+								<option value="ayam">AYAM AIRLINE</option>
+								<option value="anya">ANYA AIRLINE</option>
+								<option value="shrcber">SHRCBER AIRLINE</option>
+								<option value="msi">MSI AIRLINE</option>
+								<option value="lenovo">LENOVO AIRLINE</option>
+								<option value="logitech">LOGITECH AIRLINE</option>
+								<option value="acer">ACER AIRLINE</option>
+								<option value="asus">ASUS AIRLINE</option>
+								<option value="ddr4">DDR4 AIRLINE</option>
+								<option value="rtx">RTX3060 AIRLINE</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="seat">Preferred Seat :</label>
+							</td>
+							<td>
+								<select id="seat" name="seat">
+								<option>
+								<option value="first">FIRST CLASS</option>
+								<option value="business">BUSINESS CLASS</option>
+								<option value="economy">ECONOMY CLASS</option>
+								<option value="it">IT CLASS</option>
+								<option value="cyber">CYBER CLASS</option>
+								<option value="criminal">CRIMINAL CLASS</option>
+								</select>
+							</td>
+						</tr><tr>
+							<td>
+								<label for="fare">Select Fare:</label>
+							</td>
+							<td>
+								<select id="fare" name="fare">
+								<option>
+								<option value="one">ONE WAY</option>
+								<option value="round">ROUND TRIP</option>
+								</select>
+							</td>
+						</tr>
+						</table>
+						<input type="submit" value="Submit" >
+					</form>
+					<script>
+						function booking() {
+							alert("Your booking was submitted");
+						}
+						function fc1() {
+						var x = document.getElementById("name");
+						x.value = x.value.toUpperCase();
+						}
+						function fcs1() {
+						alert("kenapa tekan jauh sangat tu, tgk kan dah jadi upper case");
+						}
+						function fcs2() {
+						alert("kenapa tekan jauh sangat tu");
+						}
+						function fcs3() {
+						alert("kenapa tekan jauh sangat tu");
+						}
+						function fcs4() {
+						alert("kenapa tekan jauh sangat tu");
+						}
+						function fcs5() {
+						alert("kenapa tekan jauh sangat tu");
+						}
+					</script>
+
+				</div><br>
+				<a href="#holiday" data-transition="pop">Holiday page</a><a href="#more" data-transition="slidefade" style="float:right">More Information page</a>
+			</div>
+			<div data-role="footer">
+				<h2>&copy; AHFA</h2>
+			</div>
+		</div>
+		<div data-role="page" id="more" >
+			<div data-role="header">
+				<h1 style="letter-spacing:5px;font-family:Rockwell;font-size:30px">SETIA TRAVEL AGENCY</h1>
+			</div>
+			<div data-role="navbar" data-iconpos="left">
+			<ul>
+					<li> <a href="#home" data-icon="home">HOME</a> </li>
+					<li> <a href="#holiday" data-icon="star">HOLIDAY</a> </li>
+					<li> <a href="#booking" data-icon="edit">BOOKING</a> </li>
+					<li> <a href="#more" data-icon="cloud" data-theme="b">MORE INFORMAITON</a> </li>
+			</ul>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<h1 style="font-family:rockwell;text-align:center">MORE INFORMATION ABOUT OUR AGENCY</h1><br>
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+   					<h4>ABOUT US</h4>
+					<p id="1" onmouseover="mouseOver1()" onmouseout="mouseOut1()"><b>Our clients are our highest priority</b>
+					<p>At SETIA TRAVEL AGENCY, our clients are our highest priority and as trusted Travel Advisors, we will always act in your best interests. 
+					As a client, you can rely on us to advocate on your behalf when it comes to any holidays booked, and whether that means changing dates or destinations, 
+					rebooking entire holidays, making cancellations or alternative recommendations about where to travel with lower risk, we are here for you. To find out about our latest travel updates click here.
+					<p id="2" onmouseover="mouseOver2()" onmouseout="mouseOut2()"><b>Where travel is more than just a passion</b>
+					<p>SETIA TRAVEL AGENCY is a boutique travel agency with a total focus on uncompromising customer service bringing together the most knowledgeable and well travelled advisors across Australia. 
+					Experience lies at the heart of everything we do.
+					<p id="3" onmouseover="mouseOver3()" onmouseout="mouseOut3()"><b>For holidays you didn't know you wanted</b>
+					<p>With a wealth of industry experience and extensive product knowledge, your Travel Associates team has the expertise to help you create travel experiences you never thought possible.
+					<p id="4" onmouseover="mouseOver4()" onmouseout="mouseOut4()"><b>We will take the time to get it right</b>
+					<p>Our spacious and stylish offices are the perfect place to slow things down over a relaxed beverage and discuss your individual travel needs in a private and uninterrupted environment. 
+					We will then work with you to carefully prepare all of the arrangements.
+					<p id="5" onmouseover="mouseOver5()" onmouseout="mouseOut5()"><b>For the love of trading travel ideas</b>
+					<p>Just like you, our advisors have a genuine passion for travel and share a common bond in seeking out authentic travel experiences and immersing themselves in the destination.
+						<script>
+						function mouseOver1() {
+						document.getElementById("1").style.color = "red";
+						}
+						function mouseOver2() {
+						document.getElementById("2").style.color = "blue";
+						}
+						function mouseOver3() {
+						document.getElementById("3").style.color = "yellow";
+						}
+						function mouseOver4() {
+						document.getElementById("4").style.color = "green";
+						}
+						function mouseOver5() {
+						document.getElementById("5").style.color = "gray";
+						}
+						function mouseOut1() {
+						document.getElementById("1").style.color = "black";
+						}
+						function mouseOut2() {
+						document.getElementById("2").style.color = "black";
+						}
+						function mouseOut3() {
+						document.getElementById("3").style.color = "black";
+						}
+						function mouseOut4() {
+						document.getElementById("4").style.color = "black";
+						}
+						function mouseOut5() {
+						document.getElementById("5").style.color = "black";
+						}
+						</script>
+				</div><br>
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+   					<h4>CONTACT US</h4>
+					<h3>Feel Free To Ask Anything</h3>
+					<form action="/action_page.php" onsubmit="popup()">
+					NAME: <input type="text" name="name">
+					EMAIL: <input type="text" name="email">
+					MESSAGE: <input type="text" name="message">
+						<input type="submit" value="Sent Message">
+					</form>
+					<script>
+						function popup() {
+							alert("The Message has been Sent");
+						}
+					</script>
+				</div><br>
+				<a href="#booking" data-transition="flip">Booking Page</a>
+			</div>
+			<div data-role="footer">
+				<h2>&copy; AHFA</h2>
+			</div>
+		</div>
+	</body>
+</html>
