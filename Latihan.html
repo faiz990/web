@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fahranheit and Centigrade Temperatures</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="themes/Latihan1.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"  />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1" data-theme="a">
+		<div data-role="header">
+			<h1>Fahranheit and Centigrade Temperatures</h1>
+		</div>
+			<h1 style ="text-align:center" >Click to choose</h1>
+		<div>
+		</div>
+		<div>
+			<ul data-role="listview"> 
+				<li><a href="#page2">About</a></li> 
+				<li><a href="#page3">Fahranheit and Centigrade Temperatures</a></li> 
+			</ul>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; Web Class 2022</h2>
+		</div>
+	</div>
+	<div data-role="page" id="page2" data-theme="b">
+		<div data-role="header">
+			<h1>The Relation Between Multiplication and Division</h1>
+			
+			
+				<ul data-role="listview">
+					<li><a href="#page1"data-icon="grid">Home</a></li>
+					<li><a href="#page3" data-icon="heart">Fahranheit and Centigrade Temperatures</a></li>
+				</ul>
+			
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Web Class 2022</h2>
+		</div>
+		
+	</div>
+	<div data-role="page" id="page3" data-theme="c">
+		
+			<ul data-role="listview">
+				<li><a href="#page1"data-icon="grid">Home</a></li>
+				<li><a href="#page2" data-icon="heart">About</a></li>
+			</ul>
+
+<p>Insert Temperature Value</p><br>
+		
+<p>Temperature in Celcius:</p>
+<p>
+  <input id="inputCelsius" type="number" placeholder="Celsius">
+</p>
+
+<input type="button" onclick="celciusToFahrenheit()" Value="Convert to Fahrenheit"/>
+<p>The result is :<br><span id="outputFahrenheit" ></span></p><br>
+
+<p>Temperature in Fahrenheit:</p>
+<p>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit">
+</p>
+
+<input type="button" onclick="fahrenheitToCelcius()" Value="Convert to Celcius"/>
+<p>The result is :<br><span id="outputCelcius"></span></p><br>
+
+
+
+
+
+<script>
+function celciusToFahrenheit() {
+  valNum = document.getElementById("inputCelsius").value;
+  document.getElementById("outputFahrenheit").innerHTML=(valNum* 9/5)+32+"°F";
+}
+</script>
+
+
+
+<script>
+function fahrenheitToCelcius() {
+  valNum = document.getElementById("inputFahrenheit").value;
+  document.getElementById("outputCelcius").innerHTML=(valNum- 32)*5/9+"°C";
+}
+</script>
+		<div data-role="footer">
+			<h2>&copy; Web Class 2022</h2>
+		</div>
+	</div>
+</body>
