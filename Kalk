@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:blueviolet;">
+<title>Mathematic Basic Operation</title>
+
+Enter First Number :
+<input class="" type="text" id="a1" placeholder="Enter"></input></br></br></br>
+
+Enter Second Number :
+<input class="" type="text" id="a2"  placeholder="Enter"></input></br></br>
+<button onclick="Addition()">Addition</button>
+<button onclick="Substraction()">Substraction</button>
+<button onclick="Division()">Division</button>
+<button onclick="Multiply()">Multiply</button>
+<p id="num1"></p>
+<p id="num2"></p>
+<script>
+function Addition()
+{
+ num1=Number(document.getElementById("a1").value);
+ num2=Number(document.getElementById("a2").value);
+ document.getElementById("num1").value=(num1+=num2);
+ var total=document.getElementById("num1").value;
+ 
+ if (total % 2==0)
+ {
+     document.getElementById("num1").innerHTML ="The total is : "+total;
+	 document.getElementById("num2").innerHTML="Even";}
+ else{
+     document.getElementById("num1").innerHTML ="The total is : "+total ;
+     document.getElementById("num2").innerHTML="Odd";
+ }
+}
+</script>
+<script>
+function Substraction()
+{
+ num1=Number(document.getElementById("a1").value);
+ num2=Number(document.getElementById("a2").value);
+ document.getElementById("num1").value=(num1-=num2);
+ var total=document.getElementById("num1").value;
+ 
+ if (total % 2==0)
+ {
+     document.getElementById("num1").innerHTML ="The total is : "+total;
+	 document.getElementById("num2").innerHTML="Even";}
+ else if (total % 2==1)
+ {
+     document.getElementById("num1").innerHTML ="The total is : "+total ;
+     document.getElementById("num2").innerHTML="Odd";
+ }
+ else{
+     document.getElementById("num1").innerHTML ="The total is : "+total ;
+     document.getElementById("num2").innerHTML="Negative can't be declare";
+ }
+}
+
+</script>
+<script>
+function Division()
+{
+ num1=Number(document.getElementById("a1").value);
+ num2=Number(document.getElementById("a2").value);
+ if (num1==0 || num2==0){
+     document.getElementById("num1").innerHTML="Zero can't be declare in multiple form";
+	 document.getElementById("num2").innerHTML="";
+	}
+ else{
+ document.getElementById("num1").value=(num1/=num2);
+ var total=document.getElementById("num1").value;
+ 
+  if (total % 2==0)
+  {
+     document.getElementById("num1").innerHTML ="The total is : "+total;
+	 document.getElementById("num2").innerHTML="Even";}
+  else if (total % 2==1)
+  {
+     document.getElementById("num1").innerHTML ="The total is : "+total ;
+     document.getElementById("num2").innerHTML="Odd";
+  }
+  else
+  {
+     document.getElementById("num1").innerHTML ="The total is : "+total ;
+     document.getElementById("num2").innerHTML="Negative or Double number can't be declare in this form";
+  }
+ }
+}
+
+</script>
+<script>
+function Multiply()
+{
+ num1=Number(document.getElementById("a1").value);
+ num2=Number(document.getElementById("a2").value);
+ if (num1==0 || num2==0){
+     document.getElementById("num1").innerHTML="Zero can't be declare in multiple form"
+	 document.getElementById("num2").innerHTML="";
+	 }
+ else{
+ document.getElementById("num1").value=(num1*=num2);
+ var total=document.getElementById("num1").value;
+ 
+  if (total % 2==0)
+  {
+     document.getElementById("num1").innerHTML ="The total is : "+total;
+	 document.getElementById("num2").innerHTML="Even";}
+  else{
+     document.getElementById("num1").innerHTML ="The total is : "+total ;
+     document.getElementById("num2").innerHTML="Odd"; 
+  }
+ }
+}
+
+</script>
+<h2> This Section Generate Multiplications Table</h2>
+<h3><mark>  # We use Arithmetic and Looping to calculate the multiplication. #</mark></h3>
+<input class="" type="number" name="" id="sif" placeholder="Number 1-∞"></input>
+<button onclick="Show1()">Show</button>
+<p id="num3"></p>
+
+<script>
+function Show1(){
+ var x="";
+ var y=document.getElementById("sif").value;
+ for (i=1; i<=15; i++){
+ x=x+""+y+" X "+i+"="+y*i+"</br>";
+ }
+ document.getElementById("num3").innerHTML = x;
+}
+</script>
+</body>
+</html>
